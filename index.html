@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mastermind Game</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Mastermind Game</h1>
+    <div id="game-container">
+      <div id="color-buttons">
+        <!-- Buttons for selecting colors -->
+        <button class="color-btn" style="background-color: red" data-color="red"></button>
+        <button class="color-btn" style="background-color: blue" data-color="blue"></button>
+        <button class="color-btn" style="background-color: green" data-color="green"></button>
+        <button class="color-btn" style="background-color: yellow" data-color="yellow"></button>
+        <button class="color-btn" style="background-color: purple" data-color="purple"></button>
+        <button class="color-btn" style="background-color: orange" data-color="orange"></button>
+        <button class="color-btn" style="background-color: pink" data-color="pink"></button>
+        <button class="color-btn" style="background-color: brown" data-color="brown"></button>
+      </div>
+      <div id="guess-container">
+        <!-- Display current guess and provide feedback -->
+        <div id="current-guess"></div>
+        <button id="submit-guess">Submit Guess</button>
+        <div id="feedback"></div>
+      </div>
+      <div id="attempts">
+        <p id="attempts-left">Attempts left: 12</p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

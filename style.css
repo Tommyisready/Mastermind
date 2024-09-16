@@ -1,0 +1,104 @@
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #eaeaea;
+  color: #333;
+  text-align: center;
+  padding: 20px;
+  margin: 0;
+}
+
+h1 {
+  color: #222;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+#game-container {
+  margin: 0 auto;
+  width: 600px; /* Wider for better visibility */
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+#color-buttons {
+  margin-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.color-btn {
+  width: 70px; /* Increased size */
+  height: 70px; /* Increased size */
+  border: 3px solid #333;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 10px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  position: relative;
+}
+
+.color-btn:hover {
+  transform: scale(1.1); /* Enlarge button on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Shadow on hover */
+}
+
+#guess-container {
+  margin-bottom: 30px;
+}
+
+#current-guess {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#current-guess div {
+  width: 70px; /* Match button size */
+  height: 70px; /* Match button size */
+  border: 3px solid #333;
+  border-radius: 50%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+#submit-guess {
+  padding: 12px 24px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  background-color: #4caf50;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  margin-bottom: 20px;
+}
+
+#submit-guess:hover {
+  background-color: #45a049; /* Darker green on hover */
+  transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+#feedback {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+  color: #d9534f; /* Red color for feedback text */
+}
+
+#attempts {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+#attempts-left {
+  font-size: 24px;
+  color: #333;
+}
